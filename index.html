@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Smart</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="bg-amber-400 relative">
+      <div
+        class="container mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <a href="/">
+          <img
+            src="/assets/homesmartlogo.png"
+            class="w-28"
+            alt="Home Smart Logo"
+          />
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center gap-8 text-lg">
+          <a href="/">Home</a>
+          <a href="/">Contact</a>
+          <a href="/">Login</a>
+          <a href="/" class="bg-teal-900 text-white px-6 py-2 rounded-md">
+            Sign Up
+          </a>
+        </div>
+
+        <!-- Mobile Button -->
+        <button
+          id="menu-btn"
+          aria-expanded="false"
+          aria-label="Toggle Menu"
+          class="lg:hidden focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-7 h-7"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown -->
+      <div
+        id="mobile-menu"
+        class="hidden lg:hidden absolute top-full left-0 right-0 bg-amber-400 shadow-lg flex flex-col items-center gap-6 py-6 text-lg z-50"
+      >
+        <a href="/">Home</a>
+        <a href="/">Contact</a>
+        <a href="/">Login</a>
+        <a href="/" class="bg-teal-900 text-white px-6 py-2 rounded-md">
+          Sign Up
+        </a>
+      </div>
+    </nav>
+
+    <!--hearder-->
+    <header
+      class="relative bg-linear-to-b from-amber-400 to-amber-600 pt-16 pb-24 lg:pt-24 lg:pb-32 overflow-hidden"
+    >
+      <div class="container mx-auto px-6">
+        <!-- Image Wrapper -->
+        <div class="relative flex justify-center items-center">
+          <!-- Couch (Background) -->
+          <img
+            src="/assets/couch-removebg-preview.png"
+            alt="Couch"
+            class="w-full max-w-5xl mx-auto relative z-10"
+          />
+
+          <!-- App Image (Foreground) -->
+          <img
+            src="/assets/app-removebg-preview.png"
+            alt="App Preview"
+            class="absolute w-56 sm:w-72 md:w-96 lg:w-md xl:w-lg top-1/2 -translate-y-1/2 z-20"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!--qualities section-->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="grid gap-12 text-center md:grid-cols-3">
+          <div class="space-y-4">
+            <div
+              class="mx-auto w-20 h-20 flex items-center justify-center border-8 border-amber-400 rounded-full"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"
+                />
+              </svg>
+              <!-- icon -->
+            </div>
+            <h3 class="text-2xl font-bold">Safe</h3>
+            <p>Our products are secure and out-of-the-box</p>
+          </div>
+
+          <div class="space-y-4">
+            <div
+              class="mx-auto w-20 h-20 flex items-center justify-center border-8 border-amber-400 rounded-full"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-14 w-14"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold">Efficient</h3>
+            <p>Feel good about your wallet and the environment</p>
+          </div>
+
+          <div class="space-y-4">
+            <div
+              class="mx-auto w-20 h-20 flex items-center justify-center border-8 border-amber-400 rounded-full"
+            ></div>
+            <h3 class="text-2xl font-bold">Proven</h3>
+            <p>Leading the Smart Home world for 10 years</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--relax section-->
+    <section class="py-20">
+      <div
+        class="container mx-auto px-6 grid lg:grid-cols-2 items-center gap-16"
+      >
+        <!-- Text -->
+        <div class="space-y-6">
+          <h2 class="text-4xl font-bold">Relax, you're home!</h2>
+          <p class="max-w-md">
+            All our supported hardware includes traditional inputs so you can
+            integrate our products into your house in a way that's best for
+            everyone.
+          </p>
+          <a href="#" class="inline-block bg-amber-400 px-6 py-2 rounded-md">
+            Sign Up
+          </a>
+        </div>
+
+        <!-- Image -->
+        <div class="flex justify-center">
+          <img
+            src="/assets/cache_table-removebg-preview.png"
+            class="w-full max-w-lg"
+            alt="Cache Table"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--contact section-->
+    <section class="py-20 bg-neutral-100">
+      <div
+        class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center"
+      >
+        <!-- Left -->
+        <div class="text-center">
+          <img
+            src="/assets/phil-desforges-KP7p0-DRGbg-unsplash-removebg-preview.png"
+            class="mx-auto max-w-sm"
+            alt="Lamp"
+          />
+          <a
+            href="#"
+            class="inline-block mt-8 bg-amber-400 px-6 py-2 rounded-md"
+          >
+            Download the App
+          </a>
+        </div>
+
+        <!-- Right Form -->
+        <form class="bg-white p-8 rounded-lg shadow-lg space-y-6">
+          <h2 class="text-3xl font-bold">Let's Connect</h2>
+
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full border-2 border-amber-400 rounded-md p-2"
+          />
+
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full border-2 border-amber-400 rounded-md p-2"
+          />
+
+          <textarea
+            rows="5"
+            placeholder="How can we help?"
+            class="w-full border-2 border-amber-400 rounded-md p-2"
+          ></textarea>
+
+          <button class="bg-neutral-900 text-white px-6 py-2 rounded-md">
+            Sign Up
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
